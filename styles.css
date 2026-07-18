@@ -141,3 +141,20 @@ section p:last-child,
         font-size: 1.6rem;
     }
 }
+
+.cv-item {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: start;
+}
+
+.fecha {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.contenido strong {
+    font-weight: 700;
+}

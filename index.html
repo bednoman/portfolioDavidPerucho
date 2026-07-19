@@ -1,123 +1,248 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<div id="spanish" style="display: none;">
+    <!-- CV en español -->
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    </head>
+    <body>
 
-    <header>
-        <div class="cabecera">
-            <img src="assets/fotoCV.jpg" alt="Foto de perfil" class="perfil">
+        <header>
+            <div class="cabecera">
+                <img src="assets/fotoCV.jpg" alt="Foto de perfil" class="perfil">
 
-            <div class="info">
-                <h1>David Perucho Conde</h1>
-                <p>Email: david.rbdh@gmail.com</p>
-                <!-- <p>LinkedIn: linkedin.com/in/tuusuario</p> -->
-                <p id="spanish" style="display: none;">Teléfono: +34 649095057</p>
-                <p id="english">Phone: +34 649095057</p>
-            </div>
-
-            <div class="language-selector">
-                <button id="btn-en" onclick="showEnglishText()"><img src="assets/banderaInglaterra.svg" alt="Foto de perfil" class="bandera">ENGLISH</button>
-                <button id="btn-es" onclick="showSpanishText()"><img src="assets/banderaEspania.jpg" alt="Foto de perfil" class="bandera">ESPAÑOL</button>
-            </div>
-        </div>
-    </header>
-
-    <main>
-
-        <section>
-            <h2>Sobre mí</h2>
-            <p>
-                Ingeniero Informático con experiencia como desarrollador full stack. 
-                Tras un año trabajando como programador y después de mucho tiempo investigando sobre el dearrollo de videojuegos 
-                decidí profesionalizarme estudiando el master de videojuegos que ofrece la Universidad Complutense de Madrid,
-                donde aprendí a utilizar Unreal Engine y C++ trabajando en equipo con otros departamentos y recibiendo consejo y ayuda de
-                varios profesionales de la industria. Después de está experiencia estoy más motivado que nunca para seguir mejorando
-                y aprendiendo.
-
-                <br>
-                <br>
-                Soy capaz de hablar varios idiomas como el inglés (C1), el italiano (B2), el catalán (B2) y por su puesto el español (Nativo).
-            </p>
-        </section>
-
-        <section>
-            <h2>Formación</h2>
-            <div class="cv-item">
-                <div class="fecha">
-                    09/2020 - 05/2025
+                <div class="info">
+                    <h1>David Perucho Conde</h1>
+                    <p>Email: david.rbdh@gmail.com</p>
+                    <!-- <p>LinkedIn: linkedin.com/in/tuusuario</p> -->
+                    <p>Teléfono: +34 649095057</p>
                 </div>
 
-                <div class="contenido">
-                    <strong>Grado en Ingeniería Informática</strong><br>
-                    Universidad Autónoma de Madrid
+                <div class="language-selector">
+                    <button id="btn-en" onclick="showEnglishText()"><img src="assets/banderaInglaterra.svg" alt="Foto de perfil" class="bandera">ENGLISH</button>
+                    <button id="btn-es" onclick="showSpanishText()"><img src="assets/banderaEspania.jpg" alt="Foto de perfil" class="bandera">ESPAÑOL</button>
                 </div>
             </div>
-            <div class="cv-item">
-                <div class="fecha">
-                    10/2025 - 09/2026
+        </header>
+
+        <main>
+
+            <section>
+                <h2>Sobre mí</h2>
+                <p>
+                    Ingeniero Informático con experiencia como desarrollador full stack. 
+                    Tras un año trabajando como programador y después de mucho tiempo investigando sobre el dearrollo de videojuegos 
+                    decidí profesionalizarme estudiando el master de videojuegos que ofrece la Universidad Complutense de Madrid,
+                    donde aprendí a utilizar Unreal Engine y C++ trabajando en equipo con otros departamentos y recibiendo consejo y ayuda de
+                    varios profesionales de la industria. Después de está experiencia estoy más motivado que nunca para seguir mejorando
+                    y aprendiendo.
+
+                    <br>
+                    <br>
+                    Soy capaz de hablar varios idiomas como el inglés (C1), el italiano (B2), el catalán (B2) y por su puesto el español (Nativo).
+                </p>
+            </section>
+
+            <section>
+                <h2>Formación</h2>
+                <div class="cv-item">
+                    <div class="fecha">
+                        09/2020 - 05/2025
+                    </div>
+
+                    <div class="contenido">
+                        <strong>Grado en Ingeniería Informática</strong><br>
+                        Universidad Autónoma de Madrid
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <div class="fecha">
+                        10/2025 - 09/2026
+                    </div>
+
+                    <div class="contenido">
+                        <strong>Master en Programación de Videojuegos</strong><br>
+                        Universidad Complutense de Madrid
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Experiencia</h2>
+                <div class="cv-item">
+                    <div class="fecha">
+                        10/2024 - Actualidad
+                    </div>
+
+                    <div class="contenido">
+                        <strong>Programador fullstack de aplicaciones, APIs y páginas web</strong><br>
+                        Findirect (Financiera Española de Crédito a Distancia, E.F.C., S.A.)
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Proyectos</h2>
+
+                <details>
+                    <summary>Unwoven - Proyecto de TFM</summary>
+                    <div class="contenido">
+                        <p><strong>Descripción:</strong> Unwoven es un twin stick shooter en el que el jugador debe completar salas repletas de 
+                            hordas de enemigos a medida que obtiene nuevas habilidades y rellenando un mapa pseudo aleatorio.</p>
+                        <p><strong>Rol principal:</strong> Programador de IA.</p>
+                        <p><strong>Estado:</strong> Finalizado.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Proyecto 2 - Aplicación Java</summary>
+                    <div class="contenido">
+                        <p><strong>Descripción:</strong> Aplicación de gestión desarrollada en Java.</p>
+                        <p><strong>Tecnologías:</strong> Java, MySQL.</p>
+                        <p><strong>Estado:</strong> En desarrollo.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Otros proyectos</summary>
+                    <div class="contenido">
+                        <p><strong>Descripción:</strong> Diseño e implementación de una base de datos relacional.</p>
+                        <p><strong>Tecnologías:</strong> SQL, MySQL.</p>
+                        <p><strong>Estado:</strong> Finalizado.</p>
+                    </div>
+                </details>
+
+            </section>
+        </main>
+
+    </body>
+</div>
+
+<div id="english">
+    <!-- CV en inglés -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="cabecera">
+                <img src="assets/fotoCV.jpg" alt="Foto de perfil" class="perfil">
+
+                <div class="info">
+                    <h1>David Perucho Conde</h1>
+                    <p>Email: david.rbdh@gmail.com</p>
+                    <!-- <p>LinkedIn: linkedin.com/in/tuusuario</p> -->
+                    <p>Phone: +34 649095057</p>
                 </div>
 
-                <div class="contenido">
-                    <strong>Master en Programación de Videojuegos</strong><br>
-                    Universidad Complutense de Madrid
+                <div class="language-selector">
+                    <button id="btn-en" onclick="showEnglishText()"><img src="assets/banderaInglaterra.svg" alt="Foto de perfil" class="bandera">ENGLISH</button>
+                    <button id="btn-es" onclick="showSpanishText()"><img src="assets/banderaEspania.jpg" alt="Foto de perfil" class="bandera">ESPAÑOL</button>
                 </div>
             </div>
-        </section>
+        </header>
 
-        <section>
-            <h2>Experiencia</h2>
-            <div class="cv-item">
-                <div class="fecha">
-                    10/2024 - Actualidad
+        <main>
+
+            <section>
+                <h2>About me</h2>
+                <p>
+                    Computer Science graduate with experience in full-stack development. After one year of working as a software developer 
+                    and spending a long time learning game development on my own, I decided to pursue formal education in the field by 
+                    enrolling in the Master's Degree in Video Game Programming at the Complutense University of Madrid. There, I gained 
+                    experience with Unity, Unreal Engine and C++, collaborating with programmers, designers, and artists in 
+                    multidisciplinary teams while receiving guidance from industry professionals. This experience has strengthened 
+                    my passion for game development and motivated me to continue learning and improving my skills.
+
+                    <br>
+                    <br>
+                    I am fluent in Spanish (native) and English (C1), and I also have an upper-intermediate level of Italian (B2) and 
+                    Catalan (B2).
+                </p>
+            </section>
+
+            <section>
+                <h2>Studies</h2>
+                <div class="cv-item">
+                    <div class="fecha">
+                        09/2020 - 05/2025
+                    </div>
+
+                    <div class="contenido">
+                        <strong>Bachelor's Degree in Computer Science</strong><br>
+                        Universidad Autónoma de Madrid
+                    </div>
                 </div>
+                <div class="cv-item">
+                    <div class="fecha">
+                        10/2025 - 09/2026
+                    </div>
 
-                <div class="contenido">
-                    <strong>Programador fullstack de aplicaciones, api y páginas web</strong><br>
-                    Findirect (Financiera Española de Crédito a Distancia, E.F.C., S.A.)
+                    <div class="contenido">
+                        <strong>Master's Degree in Video Game Programming</strong><br>
+                        Universidad Complutense de Madrid
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section>
-            <h2>Proyectos</h2>
+            <section>
+                <h2>Expirience</h2>
+                <div class="cv-item">
+                    <div class="fecha">
+                        10/2024 - Now
+                    </div>
 
-            <details>
-                <summary>Unwoven - Proyecto de TFM</summary>
-                <div class="contenido">
-                    <p><strong>Descripción:</strong> Unwoven es un twin stick shooter en el que el jugador debe completar salas repletas de 
-                        hordas de enemigos a medida que obtiene nuevas habilidades y rellenando un mapa pseudo aleatorio.</p>
-                    <p><strong>Rol principal:</strong> Programador de IA.</p>
-                    <p><strong>Estado:</strong> Finalizado.</p>
+                    <div class="contenido">
+                        <strong>Full-stack software developer of apps, APIs and web applications</strong><br>
+                        Findirect (Financiera Española de Crédito a Distancia, E.F.C., S.A.)
+                    </div>
                 </div>
-            </details>
+            </section>
 
-            <details>
-                <summary>Proyecto 2 - Aplicación Java</summary>
-                <div class="contenido">
-                    <p><strong>Descripción:</strong> Aplicación de gestión desarrollada en Java.</p>
-                    <p><strong>Tecnologías:</strong> Java, MySQL.</p>
-                    <p><strong>Estado:</strong> En desarrollo.</p>
-                </div>
-            </details>
+            <section>
+                <h2>Proyects</h2>
 
-            <details>
-                <summary>Otros proyectos</summary>
-                <div class="contenido">
-                    <p><strong>Descripción:</strong> Diseño e implementación de una base de datos relacional.</p>
-                    <p><strong>Tecnologías:</strong> SQL, MySQL.</p>
-                    <p><strong>Estado:</strong> Finalizado.</p>
-                </div>
-            </details>
+                <details>
+                    <summary>Unwoven - Master's degree proyect</summary>
+                    <div class="contenido">
+                        <p><strong>Sumary:</strong> 
+                           Unwoven is a twin-stick shooter in which the player must fight through rooms filled with hordes of enemies 
+                           while unlocking new abilities and exploring a procedurally generated map.
+                        </p>
+                        <p><strong>Main role:</strong> IA programmer.</p>
+                    </div>
+                </details>
 
-        </section>
-    </main>
+                <details>
+                    <summary>Proyecto 2 - Aplicación Java</summary>
+                    <div class="contenido">
+                        <p><strong>Descripción:</strong> Aplicación de gestión desarrollada en Java.</p>
+                        <p><strong>Tecnologías:</strong> Java, MySQL.</p>
+                        <p><strong>Estado:</strong> En desarrollo.</p>
+                    </div>
+                </details>
 
-</body>
+                <details>
+                    <summary>Other proyects</summary>
+                    <div class="contenido">
+                        <p><strong>Descripción:</strong> Diseño e implementación de una base de datos relacional.</p>
+                        <p><strong>Tecnologías:</strong> SQL, MySQL.</p>
+                        <p><strong>Estado:</strong> Finalizado.</p>
+                    </div>
+                </details>
+
+            </section>
+        </main>
+
+    </body>
+</div>
 </html>
 
 <script>
